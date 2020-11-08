@@ -1,0 +1,69 @@
+Tic-Tac-Toe 
+
+Create an empty Tic-Tac-Toe board, a tick tac toe board can be created with a single array, a vector, or a 
+multidimensional array or a multidimensional vector.  
+
+Display the game instructions -> This is a console app, so the instructions will be kept inside a string 
+and be displayed/stored in a vector of strings, that way we can have one place to change it. 
+
+Determine who goes first 
+The problem here is how do we determine this, since I'm just playing by myself it does't matter. But a coinflip or 
+some kind of random function could make a binary choice. I like giving players some influence over events so 
+a coin toss would be helpful. To make it easy, each player has a name "Player1" & Player2 , each of them has a 
+letter, x or O. 
+
+Display the board
+The board is a nxn grid, the issue is how to display it so each player knows the address of a board cell. 
+ 
+While nobody has won and it’s not a tie
+Need an object to check the game status at each turn. This a bit aggressive for me. 
+this could be a while loop, but we have to handle user input so we have to prepare for baad input. 
+
+    If it's player 1s turn 
+        Get the player1's move from input  
+        Update the board with player1s move 
+    Otherwise 
+        Get player 2's move  
+        Update the board with player2’s move 
+    Display the board 
+    Switch turns 
+Congratulate the winner or declare a tie
+
+
+Example game flow: 
+Welcome to tic- tac toe the game with all the flow, 
+to win this game just win three in a row! 
+
+						_|_|_
+						_|_|_
+						 | |
+						 
+Enter name for player 1: ( )
+Enter name for player 2: ( )
+
+Get and store player names 
+
+
+Welcome players, now let's decide who will go first! 
+
+Let's do a coin toss,
+
+Player? (1 or 2 depending on who won the coin toss) You're first, 
+Pick a letter:, now you will be that letter for the rest of the game. 
+
+Boom, now this player goes first:
+
+Player1: make your move, (hint enter 1-9 where the number is an empty square in the grid): 
+
+Notes -> traditionally whoever choose x goes first and whoever wins goes first the next round. 
+
+
+Potential functions: 
+instructions()  -> display instructions 
+char askYesNo(string question) ask a yes or no question 
+
+int askNumber(string question, int high, int low=0) ask for a number within a range recieves a question a low numberand a high number)
+
+void displayBoard(const vector<char>& board) 
+
+					 
